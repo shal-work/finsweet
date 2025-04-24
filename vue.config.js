@@ -16,4 +16,5 @@ module.exports = defineConfig({
     ],
     devtool: 'source-map'
   },
+  outputDir: "docs",
 })
