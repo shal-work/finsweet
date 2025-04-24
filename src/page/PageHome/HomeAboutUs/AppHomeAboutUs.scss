@@ -1,0 +1,83 @@
+.decor {
+    display: flex;
+    justify-content: flex-end;
+    height: min(23px, max(var(--vw)* 23, 12px));
+    &__yellow {
+        background-color: var(--yellow);
+        width: min(800px, max(var(--vw)* 800, 40px));
+    }
+
+    &__purple {
+        background-color: var(--purple);
+        width:  min(282px, max(var(--vw)*282, 40px));
+
+    }
+}
+.aboutus {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: auto;
+    background-color: var(--lavender);
+    gap: 61px;
+    gap: min(61px, max(var(--vw) * 61, 30px));
+    padding-top: min(96px, max(var(--vw)* 96, 64px));
+    padding-left: min(80px, max(var(--vw)* 80, 50px));
+    padding-right: min(108px, max(var(--vw)* 108, 50px));
+    padding-bottom: min(96px, max(var(--vw)* 96, 64px));
+    margin-bottom: min(128px, max(var(--vw)* 128, 50px));
+    @media (max-width: 1024px) {
+        column-gap: 0;
+    }
+    @media (max-width: 767px) {
+        padding: 9vw 5vw;
+        grid-template-columns: 1fr;
+    }
+    &__item {
+        width: 100%;
+
+        @media (max-width: 1024px) {
+            padding: 0 2vw;
+        }
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+    &__subtitle {
+        padding-bottom: min(24px, max(var(--vw)* 24, 16px));
+    }
+    &__text {
+        padding-bottom: min(16px, max(var(--vw)* 16, 12px));
+    }
+    &__title {
+        padding-bottom: min(16px, max(var(--vw)* 16, 14px));
+    }
+
+    &__btn {
+        position: relative;
+        background:none;
+        border:none;
+        margin:0;
+        padding:0;
+        color: var(--purple);
+        cursor: pointer;
+        overflow: hidden;
+        height: 32px;
+        font-size: min(18px, max(calc(var(--vw) * 18), 14px));
+        line-height: min(32px, max(calc(var(--vw) * 32), 26px));
+        width: 100%;
+        text-align: left;
+        &::after {
+            content: ">";
+            position: absolute;
+            padding-left: 4px;
+            will-change: transform;
+        }
+        &:hover::after {
+            position: absolute;
+            padding-left: 8px;
+            font-size: min(22px, max(calc(var(--vw) * 22), 20px));
+            transition: font-size 300ms, padding-left 300ms;
+            will-change: transform;
+        }
+    }
+}

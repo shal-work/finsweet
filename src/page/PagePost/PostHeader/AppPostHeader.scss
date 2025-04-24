@@ -1,0 +1,58 @@
+.post-header {
+    padding: 0 min(270px, max(calc(var(--vw) * 270), 120px));
+    padding-top: min(128px, max(calc(var(--vw) * 128), 80px));
+    padding-bottom: min(64px, max(calc(var(--vw) * 64), 30px));
+    margin: 0 auto;
+    max-width: 1100px;
+    @media (max-width: 767px) {
+        padding: 30px 2vw;
+    }
+    &__nickname {
+        padding-bottom: 24px;
+        @media (max-width: 767px) {
+            padding-bottom: 12px;
+        }
+    }
+    &__photo {
+        margin-top: 7px;
+        @media (max-width: 767px) {
+            padding: 0;
+        }
+    }
+    &__name {
+        font-size: min(28px, max(var(--vw)* 28, 18px));
+        line-height: min(40px, max(var(--vw)* 40, 30px));
+        font-weight: 700;
+        letter-spacing: -1px;
+    }
+    &__category {
+        display: flex;
+        align-items: center;
+        padding-top: 16px;
+    }
+    &__title-category {
+        line-height: min(32px, max(var(--vw)* 32, 22px));
+        font-size: 24px;
+        letter-spacing: 0px;
+        margin: 0;
+        color: black;
+    } 
+    &__pictogram {
+        width: 24px;
+        height: 24px;
+        display: block;
+        margin: 0 8px 0 0;
+    }
+    &__picture {
+        display: block;
+        margin: 0 auto;
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+    }
+    &__ico {
+        width: 100%;
+        height: 100%;
+    }
+}

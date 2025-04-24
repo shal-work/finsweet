@@ -1,0 +1,123 @@
+.page-about-header {
+    position: relative;
+    &__wrapper {
+
+        position: relative;
+
+    }
+    &__block {
+        display: flex;
+        margin: 0;
+        margin-left: min(109px, max(var(--vw)* 109, 50px));
+        position: relative;
+        top: 64px;
+        background-color: transparent;
+        z-index: 1;
+        @media (max-width: 767px) {
+            flex-direction: column;
+            margin: 0;
+            top: 0;
+        }
+    }
+
+    &__block-titles {
+        padding: min(64px, max(var(--vw)* 64, 30px));
+        z-index: 1;
+        background-color: var(--light);
+    }
+    &__text {
+        padding: 102px 0 142px 0;
+        @media (max-width: 767px) {
+            padding: 0;
+            background-color: var(--light);
+        }
+    }
+    &__block-text {
+        background-color: transparent;
+        padding-left: 32px;
+        @media (max-width: 767px) {
+            padding: 0 24px 24px 24px;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: 100%;
+        @media (max-width: 1024px) {
+            float: left;
+        }
+    }
+    &__advert {
+        position: relative;
+        padding-top: min(128px, max(var(--vw)* 128, 84px));
+        padding-bottom: min(64px, max(var(--vw)* 64, 46px));
+        top:-4px;
+    }
+    &__row {
+        position: absolute;
+        bottom: 0px;
+        left: 109px;
+        left: min(109px, max(var(--vw)* 109, 34px));
+        max-width: 830px;
+        @media (max-width: 1024px) {
+            left: 0;
+            position: relative;
+            max-width: none;
+        }
+    }
+    &__decor {
+        position: relative;
+        display: flex;
+        bottom: 4px;   
+        @media (max-width: 1024px) {
+            justify-content: flex-start;
+            width: 100%;
+        }
+    }
+    &__decor-purple {
+        width: min(311px, max(var(--vw)* 311, 140px));
+        @media (max-width: 1024px) {
+            width: 40%;
+        }
+    }
+    &__decor-yellow {
+        width: min(550px, max(var(--vw)* 550, 140px));
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+    }
+}
+.overview {
+    position: relative;
+    display: flex;
+    padding: 32px 0 32px 48px;
+
+    padding-top: min(32px, max(var(--vw)* 32, 10px));
+    padding-right: 0;
+    padding-bottom: min(32px, max(var(--vw)* 32, 10px));
+    padding-left: min(48px, max(var(--vw)* 48, 10px));
+    max-width: 630px;
+    width: 75%;
+    background-color: var(--yellow);
+
+    @media (max-width: 1024px) {
+        padding: min(32px, max(var(--vw)* 32, 10px));
+        width: 65%;
+        max-width: none;
+    }
+    @media (max-width: 420px) {
+        width: auto;
+    }
+
+    &__item {
+        padding-right: 56px;
+        @media (max-width: 1024px) {
+            padding-right: min(56px, max(var(--vw)* 56, 10px));
+            flex: 0 1 100%;
+        }
+    }
+    &__text {
+        font-weight: 400;
+        font-size: min(16px, max(var(--vw)* 16, 10px));
+        line-height: min(28px, max(var(--vw)* 28, 16px));
+    }
+}

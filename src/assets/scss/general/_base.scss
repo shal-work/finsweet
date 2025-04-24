@@ -1,0 +1,177 @@
+*{
+    // margin: 0; //при верстке по БЭМ нежелательно применять общие сброс стилей в *
+    // padding: 0; //при верстке по БЭМ нежелательно применять общие сброс стилей в *
+    box-sizing: border-box;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+:root {
+    --index: calc(1vw + 1vh);
+    --vw: calc(100vw/1440);
+    --container-padding-x: 80px;
+    --container-width:  1440px;
+    --case-width:  100vw;
+    @media (max-width: 1024px) {
+        --container-padding-x: 40px;
+        --container-width:  1024px;
+    }
+    @media (max-width: 767px) {
+        --container-padding-x: 30px;
+        --container-width:  767px;
+    }
+    @media (max-width: 375px) {
+        --container-padding-x: 24px;
+        --container-width:  375px;
+    }
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+}
+* {
+    font-family: "Inter", serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: normal;
+    letter-spacing: normal;
+    font-style: normal;
+    color: var(--light);
+}
+body {
+    margin: 0;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    height: 5px;
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #646c8638;
+    border: 1px solid #858fb138;
+    border-radius: 10px;
+}
+
+.container {
+    max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
+    margin: 0 auto;
+    padding-left: var(--container-padding-x);;
+    padding-right: var(--container-padding-x);;
+    @media (max-width: 1024px) {
+        padding: 0 var(--container-padding-x) ;
+    }
+
+    width: 100%;
+}
+
+.case {
+    margin: 0 auto;
+    padding-left: var(--container-padding-x);
+    padding-right: var(--container-padding-x);
+    width: 100%;
+}
+.reset {
+    margin: 0; //при верстке по БЭМ нежелательно применять общие сброс стилей в *
+    padding: 0; //при верстке по БЭМ нежелательно применять общие сброс стилей в *
+}
+.title {
+    font-family: "Sen", serif;
+    font-weight: 700;
+    font-size: min(36px, max(calc(var(--vw) * 36), 20px));
+    line-height: min(48px, max(calc(var(--vw) * 48), 26px));
+    letter-spacing: -2px;
+    color: var(--black);
+    margin: 0;
+    &_color-light {
+        color: var(--light);
+    }
+    &_sm {
+        font-size: min(28px, max(var(--vw)* 28, 18px));
+        line-height: min(40px, max(var(--vw)* 40, 26px));
+        letter-spacing: -1px;
+    } 
+    &_lg{
+        font-size: min(48px, max(var(--vw)* 48, 36px));
+        line-height: min(64px, max(var(--vw)* 64, 56px));
+    } 
+}
+.text {
+    margin: 0;
+    color: var(--medium-grey);
+    line-height:  min(28px, max(calc(var(--vw) * 28), 26px));
+    &_color-light {
+        color: var(--light);
+    }
+    &_color-medium-grey {
+        color: var(--medium-grey);
+    }
+    &_color-black {
+        color: var(--black);
+    }
+    &_value {
+        font-family: "Sen", serif;
+        font-weight: 700;
+        font-size: min(56px, max(calc(var(--vw) * 56), 20px));
+        line-height: min(64px, max(calc(var(--vw) * 64), 32px));
+    }
+}
+
+.nickname {
+    display: flex;
+    &__photo {
+        width: 48px;
+        overflow: hidden;
+        height: 48px;
+        position: relative;
+        clip-path: circle(49%);
+        -webkit-clip-path: circle(49%);
+        margin-right: 16px;
+    }
+
+    &__img {
+        width: 100%;
+        height: auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        position: absolute;
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__name {
+        font-size: min(24px, max(var(--vw)* 24, 16px));
+        line-height: min(32px, max(var(--vw)* 32, 20px));
+        font-weight: 700;
+        color: var(--black);
+        margin: 0;
+        &_color-purple {
+            color: var(--purple);
+        }
+    }
+}
+
+.pictogram {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 48px;
+    height: 48px;
+    background-color: var(--light-yellow);
+    margin-bottom: 16px;
+    @media (max-width: 412px) {
+        margin-bottom: 6px;
+    }
+    &__ico {
+        max-width: 24px;
+        max-height: 24px;
+    }
+    &_transparent {
+        background-color: transparent;
+    }
+}

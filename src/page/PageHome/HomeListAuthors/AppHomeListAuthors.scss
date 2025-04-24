@@ -1,0 +1,61 @@
+.logo-component {
+    display: flex;
+    padding: 24px;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 767px) {
+        flex-direction: column;
+    }
+    @media (max-width: 640px) {
+        align-items: flex-start;
+    }
+    &__text {
+        padding-bottom: 24px;
+        padding-bottom: min(24px, max(var(--vw)* 24, 0px));
+      }
+    &__subtext {
+        font-size: min(14px, max(var(--vw)* 14, 12px));
+        line-height: min(20px, max(var(--vw)* 20, 16px));
+    }
+
+    &__title {
+        font-size: min(24px, max(var(--vw)* 24, 18px));
+        line-height: min(32px, max(var(--vw)* 32, 24px));
+        color: var(--medium-grey);
+    }
+
+    &__wrapper {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+        row-gap: 32px;
+        grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
+        justify-items: end;
+
+        width: 85%;
+        width: 80%;
+        @media (min-width: 1440px) {
+            grid-template-columns: repeat(5, minmax(168px, 1fr));
+        }
+        @media (max-width: 640px) {
+            grid-template-columns: repeat(5, minmax(168px, 1fr));
+            grid-template-columns: repeat(5, min(168px, max(var(--vw)* 168, 130px)));
+            justify-items: start;
+            width: 100%;
+            height: 56px;
+            overflow: scroll;
+        }
+    }
+    &__item {
+        width: 168px;
+    }
+
+    &__ico {
+        width: auto;
+        height: 28px;
+        @media (max-width: 640px) {
+            height: min(28px, max(var(--vw)* 28, 22px));
+        }
+    }
+
+}

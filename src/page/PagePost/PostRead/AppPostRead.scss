@@ -1,0 +1,37 @@
+.post-read {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    &__container { 
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 405px);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: min(32px, max(var(--vw)* 32, 20px));
+        margin-bottom: min(128px, max(var(--vw)* 128, 80px));
+        padding-bottom: 64px;
+        border-bottom: 1px solid var(--medium-grey);
+        @media (max-width: 767px) {
+            grid-template-columns: repeat(2, 0.5fr);
+            grid-template-columns: repeat(auto-fit, 296px);
+        }
+        @media (max-width: 412px) {
+            grid-template-columns: repeat(2, 0.5fr);
+            grid-template-columns: repeat(auto-fit, 100%);
+        }
+    }
+    &__title {
+        padding-bottom: min(64px, max(var(--vw)* 64, 28px));
+    }
+    &__picture {
+        margin-bottom: min(32px, max(var(--vw)* 32, 22px));
+    }
+    &__title-blog {
+        font-size: min(28px, max(var(--vw)* 28, 18px));
+        line-height: min(40px, max(var(--vw)* 40, 26px));
+        padding-bottom: 16px;
+    }
+    &__user {
+        margin-bottom: 16px;
+    }
+}

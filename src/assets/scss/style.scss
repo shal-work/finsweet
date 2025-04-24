@@ -1,0 +1,47 @@
+// @use 'site/components/button-site';
+@import './_main.scss';
+@import './general/gi';
+@import './components/ui';
+@import './helpers/classes.scss';
+
+// vue_components
+@import '@/vue_components/Headers/AppHeaders.scss';
+@import '@/vue_components/Footer/AppFooter.scss';
+@import '@/vue_components/Joining/AppJoining.scss';
+@import '@/vue_components/Choose/AppChoose.scss';
+@import '@/vue_components/Menu/AppMenu.scss';
+@import '@/vue_components/ListAuthors/AppListAuthors.scss';
+@import '@/vue_components/Categories/AppCategories.scss';
+@import '@/vue_components/SocialIcon/AppSocialIcon.scss';
+
+// PageHome
+@import '@/Page/PageHome/AppHome';
+@import '@/Page/PageHome//HomeHero/AppHomeHero';
+@import '@/Page/PageHome/HomeFeaturedPosts/AppHomeFeaturedPosts';
+@import '@/Page/PageHome/HomeAboutUs/AppHomeAboutUs.scss';
+@import '@/Page/PageHome/HomeListAuthors/AppHomeListAuthors.scss';
+@import '@/Page/PageHome/HomeTestimonials/AppHomeTestimonials.scss';
+@import '@/Page/PageHome/HomeJoining/AppHomeJoining.scss';
+// PageBlog
+@import '@/Page/PageBlog/BlogHeader/AppBlogHeader.scss';
+@import '@/Page/PageBlog/BlogAllPosts/AppBlogAllPosts.scss';
+
+//PagePost
+@import '@/Page/PagePost/PostHeader/AppPostHeader.scss';
+@import '@/Page/PagePost/PostContent/AppPostContent.scss';
+@import '@/Page/PagePost/PostRead/AppPostRead.scss';
+
+//PageAbout
+@import '@/Page/PageAbout/AboutHeader/AppAboutHeader.scss';
+@import '@/Page/PageAbout/AboutTeam/AppAboutTeam.scss';
+
+// PageBusiness
+@import '@/Page/PageBusiness/AppPageBusiness.scss';
+
+// PageAuthor
+@import '@/Page/PageAuthor/AppPageAuthor.scss';
+
+// PgeContact
+@import '@/Page/PageContact/AppPageContact.scss';
+// PagePolicy
+@import '@/Page/PagePolicy/AppPagePolicy.scss';

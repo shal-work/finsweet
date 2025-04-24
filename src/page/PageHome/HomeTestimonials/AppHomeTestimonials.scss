@@ -1,0 +1,180 @@
+.testimonials {
+    display: flex;
+    padding-top: min(92px, max(var(--vw) * 92, 60px)); 
+    padding-left: min(80px, max(var(--vw) * 80, 40px)); 
+    padding-bottom: min(112px, max(var(--vw) * 112, 80px)); 
+    padding-right: min(112px, max(var(--vw) * 112, 40px)); 
+    background-color: var(--light-yellow);
+    margin-bottom: min(128px, max(var(--vw) * 128, 84px)); 
+    @media (max-width: 1024px) {
+        flex-direction: column;
+    }
+    &__block {
+        padding-right: 80px;
+        border-right: 1px solid var(--medium-grey40);
+        width: 40%;
+        @media (max-width: 1024px) {
+            width: auto;
+            border: none;
+            padding: 0 0 min(30px, max(100vw/1024 * 30, 20px)); 
+            border-bottom: 1px solid var(--medium-grey40);
+        }
+    }
+    &__subtext {
+        color: var(--black);
+        line-height: min(20px, max(var(--vw)* 20, 14px));
+        font-weight: 600;
+        letter-spacing: 3px;
+        padding-bottom: 12px;
+    }
+    &__title {
+        color: var(--black);
+        line-height: min(48px, max(var(--vw)* 48, 30px));
+        letter-spacing: -2px;
+        padding-bottom: 16px;
+    }
+    &__text {
+        line-height: min(28px, max(var(--vw)* 28, 20px));
+        color: var(--black);
+    }
+    &__slider {
+        padding-left: 96px;
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        position: relative;
+
+        @media (max-width: 1024px) {
+            margin: 0 auto;
+            width: 100%;
+            padding: min(30px, max(100vw/1024 * 30, 20px)) 0 0 0; 
+        }
+    }
+    &__messages {
+        font-size: min(24px, max(var(--vw)* 24, 16px));
+        line-height: min(32px, max(var(--vw)* 32, 20px));
+        font-weight: 700;
+        margin: 0;
+        margin-bottom: 32px;
+        color: var(--black);
+        min-height: 200px;
+        @media (max-width: 1024px) {
+            min-height: 100px;
+        }
+        &::-webkit-scrollbar {
+            width: 10px;
+            height: 5px;
+        }
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        @media (max-width: 460px) {
+            flex-direction: column;
+        }
+    }
+    &__btn {
+        width: min(48px, max(var(--vw) * 48, 20px)); 
+        height: min(48px, max(var(--vw) * 48, 20px)); 
+        border-radius: 50%;
+        background-color: var(--light);
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__btn-active {
+        width: min(62px, max(var(--vw) * 62, 30px)); 
+        height: min(62px, max(var(--vw) * 62, 30px)); 
+        background-color: var(--black);
+        transition: all 0.3s ease-in-out;
+        &:hover{
+            background-color: var(--medium-grey);
+        }
+    }
+    &__prev {
+        margin: 0 24px 0 0;
+    }
+    &__arrow-disable {
+        fill: var(--black);
+    }
+    &__arrow-active {
+        fill: var(--light);
+    }
+}
+
+.fadeInLeft {
+    will-change: transform;
+	animation: 1s ease-in-out 1 fadeInLeft;
+}
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInRight {
+    will-change: transform;
+	animation: 1s ease-in-out 1 fadeInRight;
+}
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeOut {
+    will-change: transform;
+	animation: fadeOut 0.1s ease-in-out ;
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.fadeIn {
+    opacity: 0;
+    will-change: transform;
+	animation: fadeIn 1s ease-in-out 1;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.transformInMinus {
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-100%) !important;
+    position: relative;
+}
+
+.transformInPlus {
+    transition: all 0.3s ease-in-out;
+    transform: translateX(100%) !important;
+    position: relative;
+}

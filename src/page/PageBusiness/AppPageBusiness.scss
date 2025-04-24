@@ -1,0 +1,122 @@
+.category {
+	&__header {
+		background-color: var(--lavender);
+		text-align: center;
+		padding: min(80px, max(var(--vw)* 80, 50px)) min(462px, max(var(--vw)* 462, 200px));
+		@media (max-width: 767px) {
+			padding: 10vw;
+		}
+	}
+
+	&__title {
+		font-size: min(56px, max(var(--vw)* 56, 30px));
+		line-height: min(64px, max(var(--vw)* 64, 34px));
+		padding-bottom: 40px;
+	}
+	&__text {
+		padding-bottom: 32px;
+		max-width: 515px;
+		margin: 0 auto;
+	}
+	&__subtitle {
+		font-weight: 600;
+		line-height: min(20px, max(var(--vw)* 20, 14px));
+		letter-spacing: 3px;
+	}
+	&__content {
+		display: flex;
+		justify-content: center;
+		padding-top: min(128px, max(var(--vw)* 128, 90px));
+		padding-bottom: min(128px, max(var(--vw)* 128, 90px));
+		@media (max-width: 767px) {
+			flex-direction: column;
+		}
+	}
+
+	&__left {
+		padding-right: min(144px, max(var(--vw)* 144, 90px));
+		@media (max-width: 1024px) {
+			padding-right: 6vw;
+		}
+		@media (max-width: 767px) {
+			padding-right: 0;
+		}
+	}
+	&__text-teg {
+		display: inline;
+		font-weight: 700;
+		font-size: min(14px, max(var(--vw)* 14, 12px));
+		line-height: min(32px, max(var(--vw)* 32, 20px));
+		padding: 16px 32px;
+		margin: 0 16px;
+		border: 1px solid var(--medium-grey);
+		border-radius: 32px;
+	}
+	&__block {
+		margin-bottom: min(48px, max(var(--vw)* 48, 24px));
+	}
+	&__content-item {
+		display: flex;
+		align-items: center;
+		margin-bottom: min(64px, max(var(--vw)* 64, 40px));
+		@media (max-width: 1024px) {
+			flex-direction: column;
+		}
+	}
+	&__picture-btn {
+		width: 50%;
+		position: relative;
+		@media (max-width: 1024px) {
+			width: 100%;
+			margin-bottom: 32px;
+		}
+	}
+	&__picture {
+		display: flex;
+		align-items: center;
+		padding-right: 32px;
+		@media (max-width: 767px) {
+			padding-right: 0;
+		}
+	}
+	&__content-text {
+		width: 50%;
+		@media (max-width: 1024px) {
+			width: 100%;
+		}
+	}
+}
+
+.tags {
+	display: block;
+	@media (max-width: 767px) {
+		max-width: 265px;
+	}
+	&__item {
+		display: flex;
+		margin-bottom: 24px;
+		column-gap: 16px;
+	}
+	&__text {
+		display: inline;
+		font-weight: 700;
+		font-size: min(14px, max(var(--vw)* 14, 12px));
+		line-height: min(32px, max(var(--vw)* 32, 20px));
+		padding: 8px;
+		border: 1px solid var(--medium-grey);
+		border-radius: 32px;
+		text-align: center;
+	}
+
+	&__item50 {
+		width: 50%;
+	}
+
+	&__item30 {
+		width: 40%;
+	}
+
+	&__item70 {
+		width: 60%;
+	}
+}

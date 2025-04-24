@@ -1,0 +1,87 @@
+.page-about-teame {
+    margin-bottom: 64px;
+    padding-bottom: 64px;
+    &__block {
+        display: flex;
+        align-items: center;
+        margin-bottom: 64px;
+        @media (max-width: 767px) {
+            flex-direction: column;
+        }
+    }
+
+    &__column-reverse {
+        @media (max-width: 767px) {
+            flex-direction: column-reverse;
+        }
+    }
+    &__title {
+        font-size: min(36px, max(var(--vw)* 36, 28px));
+        padding-bottom: 16px;
+    }
+    &__subtitle {
+        padding-bottom: 16px;
+    }
+    &__text {
+        padding-right: 138px;
+        padding-right: min(138px, max(var(--vw)* 138, 80px));
+        padding-bottom: min(82px, max(var(--vw)* 82, 60px));
+        @media (max-width: 767px) {
+            padding-right: 0;
+        }
+    }
+    &__picture { 
+        position: relative;
+    }
+    &__item {
+        width: 50%; 
+        @media (max-width: 767px) {
+            width: 100%; 
+            
+        }
+        &_left {
+            padding-right: min(138px, max(var(--vw)* 138, 80px));
+            @media (max-width: 1024px) {
+                padding-right: 10vw;
+            }
+            @media (max-width: 767px) {
+                padding-right: 0;
+                padding-bottom: min(82px, max(var(--vw)* 82, 30px));
+                padding-bottom: 10vw;
+            }
+        }
+        &_right {
+            padding-left: min(64px, max(var(--vw)* 64, 30px));
+            padding-left: 64px;
+            max-width: 584px;
+            @media (max-width: 1024px) {
+                padding-left: 10vw;
+            }
+            @media (max-width: 767px) {
+                padding-left: 0;
+                padding-bottom: min(82px, max(var(--vw)* 82, 30px));
+                padding-bottom: 10vw;
+            }
+        }
+    }
+    &__decor-square {
+        width: min(103px, max(var(--vw)* 103, 40px));
+        height: min(103px, max(var(--vw)* 103, 40px));
+        background-color: var(--yellow);
+        position: absolute;
+        top: 30%;
+        left: -60px;
+        left: max(-60px, min(var(--vw)* -60, -20px));
+        border-top-left-radius: 50%;
+    }
+    &__decor-circle {
+        width: min(74px, max(var(--vw)* 74, 30px));
+        height: min(74px, max(var(--vw)* 74, 30px));
+        background-color: var(--purple);
+        position: absolute;
+        bottom: max(-37px, min(var(--vw)* -37, -15px));
+        left: 60px;
+        left: min(107px, max(var(--vw)* 107, 50px));
+        border-radius: 50%;
+    }
+}

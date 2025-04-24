@@ -1,0 +1,12 @@
+.main {
+    padding: 0;
+    background-color: var(--light);
+    position: relative;
+    @media (max-width: 767px) {
+        top: 59px;
+    }
+}
+
+h2 {
+    color: black;
+}

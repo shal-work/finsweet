@@ -1,0 +1,102 @@
+.author {
+    &__header {
+        padding: min(128px, max(calc(var(--vw) * 128), 80px)) min(208px, max(calc(var(--vw) * 208), 70px));
+        background-color: var(--lavender);
+        position: relative;
+        @media (max-width: 1024px) {
+            padding: 5vw 6vw;
+        }
+    }
+    &__block {
+        display: flex;
+        background-color: var(--lavender);
+        justify-content: center;
+        max-width: 900px;
+        margin: 0 auto;
+        @media (max-width: 767px) {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__block-text {
+        margin-top: min(24px, max(calc(var(--vw) * 24), 12px));
+        margin-bottom: min(24px, max(calc(var(--vw) * 24), 12px));
+    }
+    &__picture {
+        padding-right: 32px;
+        height: 100%;
+        display: block;
+        @media (max-width: 767px) {
+            padding: 0;
+            padding-bottom: 24px;
+        }
+    }
+    &__post-picture {
+        width: 50%;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+    &__my-posts {
+        padding: 0 min(128px, max(calc(var(--vw) * 128), 80px));
+        padding-top: min(128px, max(calc(var(--vw) * 128), 80px));
+        padding-bottom: min(64px, max(calc(var(--vw) * 64), 20px));
+        max-width: 1440px;
+        margin: 0 auto;
+        @media (max-width: 767px) {
+            padding: 0;
+            margin-bottom: 64px;
+        }
+    }
+    &__post {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: min(64px, max(calc(var(--vw) * 64), 24px));
+        @media (max-width: 767px) {
+            flex-direction: column;
+            padding-top: min(64px, max(calc(var(--vw) * 64), 24px));
+        }
+    }
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        @media (max-width: 767px) {
+            row-gap: 24px;
+            align-items: normal;
+            justify-content: center;
+        }
+    }
+    &__header-title {
+        margin-bottom: min(24px, max(calc(var(--vw) * 24), 12px));
+    }
+
+    &__decor {
+        position: absolute;
+        bottom: 0;
+    }
+    &__bottom {
+        margin-bottom: 64px;
+    }
+    &__header-post {
+        @media (max-width: 767px) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+    &__title {
+        margin-bottom: min(64px, max(calc(var(--vw) * 64), 32px));
+    }
+    &__post-text {
+        width: 50%;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+    }
+}
+

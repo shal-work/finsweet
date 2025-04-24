@@ -1,0 +1,99 @@
+.choose {
+    padding-bottom: min(128px, max(var(--vw)* 128, 50px));
+    &__title {
+        text-align: center;
+        padding-bottom: 48px;
+    }
+    &__container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 296px);
+        grid-template-rows: auto;
+        gap: min(32px, max(var(--vw) * 32, 20px));
+        margin-bottom: min(128px, max(var(--vw) * 128, 80px));
+        @media (min-width: 1440px) {
+            grid-template-columns: repeat(auto-fit, 296px);
+        }
+        @media (max-width: 767px) {
+            grid-template-columns: repeat(auto-fit, 296px);
+        }
+        @media (max-width: 412px) {
+            grid-template-columns: 1fr;
+        }
+    }
+    &__item {
+        padding: 32px;
+        border: 1px solid var(--medium-grey);
+        position: relative;
+        will-change: transform;
+        transition: all 0.2s;
+        @media (max-width: 412px) {
+            padding: 5vw;
+        }
+    }
+    &__active {
+        background-color: var(--yellow);
+        border: 1px solid var(--yellow);
+    }
+    &__button {
+        position: absolute;
+        background: transparent;
+        border: transparent;
+        margin: 0;
+        padding: 0;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+    &__special-post {
+        display: flex;
+        position: relative;
+        align-items: flex-end;
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
+        @media (max-width: 1024px) {
+            flex-direction: column;
+        }
+    }
+    &__picture-post {
+        width: 74%;
+        max-height: 705px;
+        height: 100vw;
+        position: relative;
+        overflow: hidden;
+        @media (max-width: 1024px) {
+            width: 100%;
+        }
+    }
+    &__img {
+        width: 100%;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+        object-fit: cover;
+    }
+    &__content-post {
+        position: absolute;
+        width: 55%;
+        right: 0;
+        background-color: var(--light);
+        padding: min(79px, max(var(--vw)* 79, 30px));
+        @media (max-width: 1024px) {
+            width: 100%;
+            position: relative;
+        }
+    }
+    &__content-title {
+        padding-bottom: 16px;
+    }
+    &__content-text {
+        padding-bottom: min(32px, max(var(--vw)* 32, 22px));
+    }
+    &__content-subtitle {
+        padding-bottom: min(24px, max(var(--vw)* 24, 16px));
+    }
+}

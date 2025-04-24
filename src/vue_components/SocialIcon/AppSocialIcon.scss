@@ -1,0 +1,32 @@
+.social {
+    display: grid;
+    grid-template-columns: repeat(4, 21px);
+    column-gap: min(27px, max(calc(var(--vw) * 27), 20px));
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+    &__icon {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+}
+.icon {
+    fill: var(--medium-grey);
+    width: 21px;
+    height: 21px;
+}
+.zoom-hover {
+    transform: scale(1);
+    will-change: transform;
+    transition: transform .3s, fill .3s;
+    cursor: pointer;
+    &:hover {
+        fill: var(--white);
+        transform: scale(1.1);
+    }
+}
+.color-dark {
+    fill: var(--black);
+}

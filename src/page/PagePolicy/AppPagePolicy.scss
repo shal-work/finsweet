@@ -1,0 +1,30 @@
+.policy {
+
+		&__header {
+            background-color: var(--lavender);
+            text-align: center;
+            padding: min(80px, max(var(--vw)* 80, 50px)) min(462px, max(var(--vw)* 462, 200px));
+            @media (max-width: 767px) {
+                padding: 6vw 0;
+            }
+		}
+		&__content {
+            padding-top: min(128px, max(calc(var(--vw) * 128), 60px));
+            padding-right: min(256px, max(calc(var(--vw) * 256), 100px));
+            padding-left: min(256px, max(calc(var(--vw) * 256), 100px));
+            padding-bottom: min(128px, max(calc(var(--vw) * 128), 60px));
+            @media (max-width: 767px) {
+                padding: 0;
+                padding-top: 10vw;
+                padding-bottom: 100px;
+            }
+		}
+		&__title {
+            padding-bottom: min(32px, max(calc(var(--vw) * 32), 14px));
+		}
+
+		&__text {
+            padding-bottom: min(24px, max(calc(var(--vw) * 24), 14px));
+		}
+}
+

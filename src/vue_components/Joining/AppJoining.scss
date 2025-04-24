@@ -1,0 +1,16 @@
+.joining {
+    max-width: 414px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: min(128px, max(var(--vw)* 128, 84px));
+    &__title {
+        padding-bottom: 16px;
+    }
+    &__text {
+        padding-bottom: 32px;
+    }
+
+    &__btn {
+
+    }
+}

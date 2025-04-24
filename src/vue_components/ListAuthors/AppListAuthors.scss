@@ -1,0 +1,56 @@
+.list-authors {
+    margin-bottom: min(96px, max(var(--vw) * 96, 64px));
+    &__title {
+        text-align: center;
+        padding-bottom: 48px;
+    }
+    &__cards {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 296px);
+        grid-template-rows: auto;
+        gap: min(32px, max(var(--vw) * 32, 20px));
+        padding-bottom: 64px;
+        @media (min-width: 1440px) {
+            grid-template-columns: repeat(auto-fit, 296px);
+        }
+        @media (max-width: 767px) {
+            grid-template-columns: repeat(auto-fit, 296px);
+        }
+    }
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        background-color: var(--light-grey);
+    }
+    &__picture {
+        width: 128px;
+        height: 128px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    &__img {
+        width: 100%;
+        height: auto;
+        clip-path: circle(38%);
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%,-50%);
+    }
+    &__name {
+        font-size: min(28px, max(var(--vw)* 28, 16px));
+        line-height: min(40px, max(var(--vw)* 40, 30px));
+    }
+    &__writer {
+        font-size: min(14px, max(var(--vw)* 14, 12px));
+        line-height: min(20px, max(var(--vw)* 20, 15px));
+        padding-bottom: 20px;
+    }
+    &__active {
+        background-color: var(--light-yellow);
+    }
+}

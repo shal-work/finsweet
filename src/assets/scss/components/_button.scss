@@ -1,0 +1,86 @@
+.btn {
+    display: inline-block;
+    border: 1px solid transparent;
+    background-color: transparent;
+    cursor: pointer;
+    will-change: transform;
+    transition: all 0.2s;
+    border-radius: 0px;
+    padding: 13px 31px;
+    color: var(--white);
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    max-width: 158px;
+
+    font-family: "Sen", serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 14px 48px;
+
+    line-height: min(24px, max(calc(var(--vw) * 24), 19px));
+    max-width: 179px;
+    text-align: center;
+    @media (max-width: 767px) {
+        max-width: none;
+    }
+    @media (max-width: 375px) {
+        margin: 0 auto;
+        font-size: 12px;
+        padding-inline: unset;
+        padding: 13px 28px;
+        width: 100%;
+    }
+    &-light {
+        background-color: var(--light);
+        border: 2px solid var(--light);
+        color: var(--black);
+        font-family: Inter;
+        font-weight: 600;
+        &:hover {
+            background-color: var(--medium-grey);
+            border: 2px solid var(--medium-grey);
+            color: var(--light-grey);
+        }
+    }
+    &-yellow {
+        background-color: var(--yellow);
+        border: 2px solid var(--yellow);
+        color: var(--black);
+        font-family: Inter;
+        font-weight: 600;
+        max-width: min-content;
+        padding-left: 45px;
+        padding-right: 45px;
+        width: auto;
+        @media (max-width: 767px) {
+            max-width: none;
+        }
+        @media (max-width: 375px) {
+            margin: 0 auto;
+            font-size: 12px;
+            width: 100%;
+        }
+        &:hover {
+            background-color: var(--dark-yellow);
+            border: 2px solid var(--dark-yellow);
+            color: var(--black);
+        }
+        &::after {
+            content: ">";
+            padding-left: 7px;
+        }
+    }
+    &-area {
+        position: absolute;
+        background: transparent;
+        border: transparent;
+        margin: 0;
+        padding: 0;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+}
