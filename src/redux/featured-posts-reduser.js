@@ -13,7 +13,7 @@ let initialState = {
             date: 'May 23, 2022',
             title: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
             text: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.',
-            href: '#11',
+            href: '#',
             active: true
         },
         {
@@ -23,7 +23,7 @@ let initialState = {
             date: 'Apr 20, 2022',
             title: '2-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
-            href: '#22',
+            href: '#',
             active: false
         },
         {
@@ -33,7 +33,7 @@ let initialState = {
             date: 'Jun 20, 2022',
             title: '3-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
             text: '3-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
-            href: '#33',
+            href: '#',
             active: false
         },
         {
@@ -43,7 +43,7 @@ let initialState = {
             date: 'Jul 20, 2022',
             title: '4-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
             text: '4-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
-            href: '#44',
+            href: '#',
             active: true
         },
         {
@@ -53,7 +53,7 @@ let initialState = {
             date: 'Jul 20, 2022',
             title: '5-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
             text: '5-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
-            href: '#55',
+            href: '#',
             active: false
         },
         {
@@ -63,7 +63,7 @@ let initialState = {
             date: 'Jul 20, 2022',
             title: '6-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
             text: '6-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.',
-            href: '#66',
+            href: '#',
             active: false
         },
     ],

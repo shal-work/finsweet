@@ -11,7 +11,7 @@ let initialState = {
             subtitle: 'Why we started',
             title: 'It started out as a simple idea and evolved into our passion',
             text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
-            href: '#1',
+            href: '#',
             active: true
         },
         {
@@ -20,7 +20,7 @@ let initialState = {
             subtitle: '2 Why we started',
             title: '2 It started out as a simple idea and evolved into our passion',
             text: '2 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
-            href: '#2',
+            href: '#',
             active: true
         },
         {
@@ -29,7 +29,7 @@ let initialState = {
             subtitle: '3 Why we started',
             title: '3 It started out as a simple idea and evolved into our passion',
             text: '3 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
-            href: '#3',
+            href: '#',
             active: true
         },
         {
@@ -38,7 +38,7 @@ let initialState = {
             subtitle: '4 Why we started',
             title: '4 It started out as a simple idea and evolved into our passion',
             text: '4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.',
-            href: '#4',
+            href: '#',
             active: true
         },
         
