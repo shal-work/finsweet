@@ -8,7 +8,7 @@
     &__block {
         display: flex;
         margin: 0;
-        margin-left: min(109px, max(var(--vw)* 109, 50px));
+        margin-left: min(109px, max(calc(var(--vw)* 109), 50px));
         position: relative;
         top: 64px;
         background-color: transparent;
@@ -21,7 +21,7 @@
     }
 
     &__block-titles {
-        padding: min(64px, max(var(--vw)* 64, 30px));
+        padding: min(64px, max(calc(var(--vw)* 64), 30px));
         z-index: 1;
         background-color: var(--light);
     }
@@ -48,15 +48,15 @@
     }
     &__advert {
         position: relative;
-        padding-top: min(128px, max(var(--vw)* 128, 84px));
-        padding-bottom: min(64px, max(var(--vw)* 64, 46px));
+        padding-top: min(128px, max(calc(var(--vw)* 128), 84px));
+        padding-bottom: min(64px, max(calc(var(--vw)* 64), 46px));
         top:-4px;
     }
     &__row {
         position: absolute;
         bottom: 0px;
         left: 109px;
-        left: min(109px, max(var(--vw)* 109, 34px));
+        left: min(109px, max(calc(var(--vw)* 109), 34px));
         max-width: 830px;
         @media (max-width: 1024px) {
             left: 0;
@@ -74,13 +74,13 @@
         }
     }
     &__decor-purple {
-        width: min(311px, max(var(--vw)* 311, 140px));
+        width: min(311px, max(calc(var(--vw)* 311), 140px));
         @media (max-width: 1024px) {
             width: 40%;
         }
     }
     &__decor-yellow {
-        width: min(550px, max(var(--vw)* 550, 140px));
+        width: min(550px, max(calc(var(--vw)* 550), 140px));
         @media (max-width: 1024px) {
             width: 100%;
         }
@@ -91,16 +91,16 @@
     display: flex;
     padding: 32px 0 32px 48px;
 
-    padding-top: min(32px, max(var(--vw)* 32, 10px));
+    padding-top: min(32px, max(calc(var(--vw)* 32), 10px));
     padding-right: 0;
-    padding-bottom: min(32px, max(var(--vw)* 32, 10px));
-    padding-left: min(48px, max(var(--vw)* 48, 10px));
+    padding-bottom: min(32px, max(calc(var(--vw)* 32), 10px));
+    padding-left: min(48px, max(calc(var(--vw)* 48), 10px));
     max-width: 630px;
     width: 75%;
     background-color: var(--yellow);
 
     @media (max-width: 1024px) {
-        padding: min(32px, max(var(--vw)* 32, 10px));
+        padding: min(32px, max(calc(var(--vw)* 32), 10px));
         width: 65%;
         max-width: none;
     }
@@ -111,13 +111,13 @@
     &__item {
         padding-right: 56px;
         @media (max-width: 1024px) {
-            padding-right: min(56px, max(var(--vw)* 56, 10px));
+            padding-right: min(56px, max(calc(var(--vw)* 56), 10px));
             flex: 0 1 100%;
         }
     }
     &__text {
         font-weight: 400;
-        font-size: min(16px, max(var(--vw)* 16, 10px));
-        line-height: min(28px, max(var(--vw)* 28, 16px));
+        font-size: min(16px, max(calc(var(--vw)* 16), 10px));
+        line-height: min(28px, max(calc(var(--vw)* 28), 16px));
     }
 }

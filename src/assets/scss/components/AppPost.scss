@@ -43,22 +43,22 @@
         }
     }
     &__title-list {
-        font-size: min(24px, max(var(--vw)* 24, 18px));
-        line-height: min(32px, max(var(--vw)* 32, 24px));
+        font-size: min(24px, max(calc(var(--vw)* 24), 18px));
+        line-height: min(32px, max(calc(var(--vw)* 32), 24px));
     }
     &__title {
-        font-size: min(28px, max(var(--vw)* 28, 22px));
-        line-height: min(40px, max(var(--vw)* 40, 30px));
+        font-size: min(28px, max(calc(var(--vw)* 28), 22px));
+        line-height: min(40px, max(calc(var(--vw)* 40), 30px));
     }
     &__title-blog {
-        font-size: min(36px, max(var(--vw)* 36, 20px));
+        font-size: min(36px, max(calc(var(--vw)* 36), 20px));
         line-height: min(48px, max(calc(var(--vw) * 48), 26px));
-        padding-bottom: min(16px, max(var(--vw)* 16, 12px));
+        padding-bottom: min(16px, max(calc(var(--vw)* 16), 12px));
     }
     &__title-hero {
         padding-bottom: 24px;
-        font-size: min(56px, max(var(--vw)* 56, 30px));
-        line-height: min(64px, max(var(--vw)* 64, 34px));
+        font-size: min(56px, max(calc(var(--vw)* 56), 30px));
+        line-height: min(64px, max(calc(var(--vw)* 64), 34px));
         @media (max-width: 767px) {
             letter-spacing: normal;
         }
@@ -70,8 +70,8 @@
     }
     &__subtitle {
         margin-bottom:  min(20px, max(calc(var(--vw) * 20), 12px));
-        font-size: min(16px, max(var(--vw)* 16, 12px));
-        line-height: min(20px, max(var(--vw)* 20, 16px));
+        font-size: min(16px, max(calc(var(--vw)* 16), 12px));
+        line-height: min(20px, max(calc(var(--vw)* 20), 16px));
         letter-spacing: 3px;
     }
 }

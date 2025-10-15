@@ -56,13 +56,12 @@ body {
 .container {
     max-width: calc(var(--container-width) + var(--container-padding-x) * 2);
     margin: 0 auto;
-    padding-left: var(--container-padding-x);;
-    padding-right: var(--container-padding-x);;
+    padding-left: var(--container-padding-x);
+    padding-right: var(--container-padding-x);
+    width: 100%;
     @media (max-width: 1024px) {
         padding: 0 var(--container-padding-x) ;
     }
-
-    width: 100%;
 }
 
 .case {
@@ -87,13 +86,13 @@ body {
         color: var(--light);
     }
     &_sm {
-        font-size: min(28px, max(var(--vw)* 28, 18px));
-        line-height: min(40px, max(var(--vw)* 40, 26px));
+        font-size: min(28px, max(calc(var(--vw)* 28), 18px));
+        line-height: min(40px, max(calc(var(--vw)* 40), 26px));
         letter-spacing: -1px;
     } 
     &_lg{
-        font-size: min(48px, max(var(--vw)* 48, 36px));
-        line-height: min(64px, max(var(--vw)* 64, 56px));
+        font-size: min(48px, max(calc(var(--vw)* 48), 36px));
+        line-height: min(64px, max(calc(var(--vw)* 64), 56px));
     } 
 }
 .text {
@@ -144,8 +143,8 @@ body {
     }
 
     &__name {
-        font-size: min(24px, max(var(--vw)* 24, 16px));
-        line-height: min(32px, max(var(--vw)* 32, 20px));
+        font-size: min(24px, max(calc(var(--vw)* 24), 16px));
+        line-height: min(32px, max(calc(var(--vw)* 32), 20px));
         font-weight: 700;
         color: var(--black);
         margin: 0;

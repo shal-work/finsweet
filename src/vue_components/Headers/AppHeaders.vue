@@ -18,9 +18,12 @@
                 <AppMenu :isBtn = "true"/>
             </div>
         </nav>
-        <div class="header__burger">
+        <!-- <div class="header__burger">
             <div class="icon-bar"></div>
-        </div>
+        </div> -->
+        <button type="button"  class="header__burger reset" aria-label="Открыть меню" aria-expanded="false">
+            <span class="icon-bar"></span>
+        </button>
     </header>
 </template>
 

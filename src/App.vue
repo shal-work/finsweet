@@ -1,8 +1,7 @@
 <template>
 		<AppHeaders/>
-            <RouterView :pState="state" :pDispatch="dispatch"/>
+        <RouterView :pState="state" :pDispatch="dispatch"/>
 		<AppFooter/>
-
         
 </template>
 
