@@ -5,6 +5,7 @@
 }
 *, ::after, ::before {
     box-sizing: border-box;
+    // outline: 1px solid red;
 }
 :root {
     --index: calc(1vw + 1vh);
@@ -36,7 +37,7 @@ a, a:link, a:visited {
     line-height: normal;
     letter-spacing: normal;
     font-style: normal;
-    color: var(--light);
+    // color: var(--light);
 }
 body {
     margin: 0;

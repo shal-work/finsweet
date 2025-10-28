@@ -39,7 +39,7 @@
                             <textarea class="form__input" id="message" rows="5" cols="33" placeholder="Message"></textarea>
                         </div>
                     </div>
-                    <button class="btn btn-yellow text-nobreak form__btn" name="submit" type="submit" aria-label="Send Message">Send Message</button>
+                    <button class="btn btn-yellow form__btn" name="submit" type="submit" aria-label="Send Message">Send Message</button>
                 </form>
             </div>
         </div>

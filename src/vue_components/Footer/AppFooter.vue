@@ -22,7 +22,7 @@
                     </h2>
                     <div class="footer__control">
                         <input class="footer__input" type="text" placeholder="Enter Your Email">
-                        <a href="#" class="btn btn-yellow text-nobreak">Subscribe</a>
+                        <a href="#" class="btn btn-yellow ">Subscribe</a>
                     </div>
                 </div>
             </div>

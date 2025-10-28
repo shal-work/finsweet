@@ -20,7 +20,7 @@
             <p class="home__text">
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
             </p>
-            <a href="#" class="home__btn btn btn-yellow text-nobreak post__btn">Read More</a>
+            <a href="#" class="home__btn btn btn-yellow post__btn">Read More</a>
         </div>
     </section>
 </template>

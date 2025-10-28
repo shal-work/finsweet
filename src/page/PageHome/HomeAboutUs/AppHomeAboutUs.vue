@@ -9,7 +9,7 @@
                 <p class="text aboutus__subtitle text-uppercase">ABOUT US</p>
                 <h2 class="title aboutus__title">We are a community of content writers who share their learnings</h2>
                 <p class="text aboutus__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                <a href="#" class="aboutus__btn btn text-nobreak">Read More</a>
+                <a href="#" class="aboutus__btn btn">Read More</a>
             </div>
             <div class="aboutus__item">
                 <p class="text aboutus__text text-uppercase">Our mision</p>

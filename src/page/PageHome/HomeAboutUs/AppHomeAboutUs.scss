@@ -61,7 +61,7 @@
         color: var(--purple);
         cursor: pointer;
         overflow: hidden;
-        height: 32px;
+        // height: 32px;
         font-size: min(18px, max(calc(var(--vw) * 18), 14px));
         line-height: min(32px, max(calc(var(--vw) * 32), 26px));
         width: 100%;

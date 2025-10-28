@@ -18,7 +18,7 @@
             <p class="text featured-posts__margin-bottom">
                 {{text}}
             </p>
-            <a :href = href class="btn btn-yellow text-nobreak featured-posts__margin-top">Read More</a>
+            <a :href = href class="btn btn-yellow featured-posts__margin-top">Read More</a>
         </div>
 </template>
 

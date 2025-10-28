@@ -58,7 +58,7 @@
                 <p class="text text-uppercase choose__content-subtitle">{{ currentCatagory.subtitle }}</p>
                 <h3 class="title choose__content-title title_content">{{currentCatagory.title }}</h3>
                 <p class="text choose__content-text">{{ currentCatagory.text }}</p>
-                <a :href=currentCatagory.href class=" btn btn-yellow text-nobreak">Discover our story</a>
+                <a :href=currentCatagory.href class=" btn btn-yellow ">Discover our story</a>
             </div>
         </div>
     </section>

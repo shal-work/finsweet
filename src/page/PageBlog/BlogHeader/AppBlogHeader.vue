@@ -19,7 +19,7 @@
                 <p class="text blog-header__text">
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.
                 </p>
-                <a href="#" class="btn btn-yellow text-nobreak">Read More</a>
+                <a href="#" class="btn btn-yellow">Read More</a>
             </div>
             <!-- <div class="post__picture blog-header__item"> -->
                 <picture class="post__picture blog-header__item blog-header__picture">

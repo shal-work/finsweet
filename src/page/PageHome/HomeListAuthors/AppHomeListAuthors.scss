@@ -31,14 +31,11 @@
         row-gap: 32px;
         grid-template-columns: repeat(auto-fill, minmax(168px, 1fr));
         justify-items: end;
-
-        width: 85%;
         width: 80%;
         @media (min-width: 1440px) {
             grid-template-columns: repeat(5, minmax(168px, 1fr));
         }
         @media (max-width: 640px) {
-            grid-template-columns: repeat(5, minmax(168px, 1fr));
             grid-template-columns: repeat(5, min(168px, max(var(--vw)* 168, 130px)));
             justify-items: start;
             width: 100%;
